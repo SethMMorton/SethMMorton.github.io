@@ -5,18 +5,13 @@ tagline: Homepage
 ---
 {% include JB/setup %}
 
-## About this blog
+## About me
 
-Thoughts
-    
-## Posts
+I am self-taught programmer with a computational/theoretical chemistry background.
+My language of choice is Python, but I did most of my graduate work in Fortran.
+I also use C++, Perl, Tcl, Bash & Csh.  I enjoy scripting, particularly text parsing
+and automation.  I also enjoy writing numerical and scientific code.
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-    
 ## Packages
 
 ### Utilities
@@ -30,7 +25,10 @@ Thoughts
 * [RAPID](https://github.com/jensengrouppsu/rapid) (Python - CLI and GUI)
 * [NPSpec](https://github.com/SethMMorton/NPSpec) (C++, C, Fortran, Python - Library)
 
-## To-Do
+## Posts
 
-Everything!
-
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
