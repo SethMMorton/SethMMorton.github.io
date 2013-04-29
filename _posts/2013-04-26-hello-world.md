@@ -9,7 +9,7 @@ tags: [brain-droppings]
 
 My first post!
 
-This blog will be dedicated to coding and computing, with likely topics being
+This blog will talk about coding and computing, with likely topics being
 
 * Python
 * Fortran
@@ -18,3 +18,5 @@ This blog will be dedicated to coding and computing, with likely topics being
 * Tough Installations
 * Tutorials
 * Clever command-line techniques
+
+There may also be the occasional off-topic post about movies or whatnot.
