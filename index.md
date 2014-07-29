@@ -5,7 +5,7 @@ tagline: Homepage
 ---
 {% include JB/setup %}
 
-[Projects](/projects/) | [Unix Tutorial](/unix/) | [About Me](/about/)
+[Projects](/projects/) | [About Me](/about/)
 
 ## Posts
 

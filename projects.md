@@ -5,7 +5,17 @@ description: "My Projects"
 ---
 {% include JB/setup %}
 
-## input_reader
+## Python Libraries
+
+### natsort
+
+[Documentation](http://pythonhosted.org/natsort/index.html) | [Code](https://github.com/SethMMorton/natsort) | [Download](https://pypi.python.org/pypi/natsort)
+
+The natsort package provides a key helps sorts lists "naturally"; that is it sorts alphabetically
+and numerically, and not lexicographically. It provides support for ints and floats
+(including negatives and exponential notation) as well as version numbers (i.e. 1.2.3).
+
+### input_reader
 
 [Documentation](http://pythonhosted.org/input_reader/index.html) | [Code](https://pypi.python.org/pypi/input_reader) | [Download](https://pypi.python.org/pypi/input_reader)
 
@@ -21,15 +31,23 @@ as a strong resemblance to the argparse module in the python standard library. W
 you can define how to read your input files in a relatively small number of lines (~1-2 per keyword)
 that are (for the most part) easy to read.
 
-## natsort
+## Scientific Projects
 
-[Code](https://github.com/SethMMorton/natsort) | [Download](https://pypi.python.org/pypi/natsort)
+### RAPID
 
-The natsort package provides a key helps sorts lists "naturally"; that is it sorts alphabetically
-and numerically, and not by ASCII. It provides support for ints and floats (including negatives
-and exponental notation) and basic support for sorting version numbers (1.2.3, no letters).
+[Code](https://github.com/jensengrouppsu/rapid)
 
-## NPVol
+Simulate IR and Raman peaks with fast exchange.  This is only useful if you
+are a vibrational spectroscopist.
+
+### NPSpec
+
+[API Documentation](http://sethmmorton.github.io/NPSpec) | [Code](https://github.com/SethMMorton/NPSpec)
+
+The NPSpec library aids in solving the optical properties of nanoparticles. 
+NPSpec provides interfaces for four languages: C, C++, Fortran, and Python.
+
+### NPVol
 
 [Code](https://github.com/jensengrouppsu/npvol)
 
@@ -44,16 +62,3 @@ cases, because you can use it to
  
 I'm sure there are many other wonderful uses, but these are why I am interested
 in the volume.
-
-## RAPID
-
-[Code](https://github.com/jensengrouppsu/rapid)
-
-Simulate IR and Raman peaks with fast exchange.
-
-## NPSpec
-
-[API Documentation](http://sethmmorton.github.io/NPSpec) | [Code](https://github.com/SethMMorton/NPSpec)
-
-The NPSpec library aids in solving the optical properties of nanoparticles. 
-NPSpec provides interfaces for four languages: C, C++, Fortran, and Python.
