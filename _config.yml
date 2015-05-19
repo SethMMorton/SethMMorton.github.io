@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: pretty
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "Rakefile"]
 markdown: kramdown
 highlighter: pygments
 
@@ -12,7 +12,7 @@ production_url: https://sethmmorton.github.io
 # so be sure to set them if your theme uses them.
 #
 title : Seth M. Morton
-tagline: Something Clever
+# tagline: Something Clever
 author :
   name : Seth M. Morton
   email : drtuba78@gmail.com

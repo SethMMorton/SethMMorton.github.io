@@ -11,9 +11,32 @@ description: "My Projects"
 
 [Documentation](http://pythonhosted.org/natsort/index.html) | [Code](https://github.com/SethMMorton/natsort) | [Download](https://pypi.python.org/pypi/natsort)
 
-The natsort package provides a key helps sorts lists "naturally"; that is it sorts alphabetically
-and numerically, and not lexicographically. It provides support for ints and floats
-(including negatives and exponential notation) as well as version numbers (i.e. 1.2.3).
+When you try to sort a list of strings that contain numbers, the normal python sort algorithm sorts lexicographically, so you might not get the results that you expect:
+
+{% highlight python %}
+>>> a = ['a2', 'a9', 'a1', 'a4', 'a10']
+>>> sorted(a)
+['a1', 'a10', 'a2', 'a4', 'a9']
+{% endhighlight %}
+
+Notice that it has the order ('1', '10', '2') - this is because the list is being sorted in lexicographical order, which sorts numbers like you would letters (i.e. 'b', 'ba', 'c').
+
+natsort provides a function natsorted that helps sort lists "naturally", either as real numbers (i.e. signed/unsigned floats or ints), or as versions. Using natsorted is simple: 
+
+{% highlight python %}
+>>> from natsort import natsorted
+>>> a = ['a2', 'a9', 'a1', 'a4', 'a10']
+>>> natsorted(a)
+['a1', 'a2', 'a4', 'a9', 'a10']
+{% endhighlight %}
+
+natsorted identifies real numbers anywhere in a string and sorts them naturally.
+
+### fastnumbers
+
+[Documentation](http://pythonhosted.org/fastnumbers/index.html) | [Code](https://github.com/SethMMorton/fastnumbers) | [Download](https://pypi.python.org/pypi/fastnumbers)
+
+This module is a Python C extension that will convert strings to numbers much faster than can be done using pure Python. Additionally, if the string cannot be converted, instead of a ValueError the return value can be either the input as-is or a default value. To achieve this, the module makes some assumptions about the input type (input is int (or long), float, or str (or unicode)), and otherwise a TypeError is raised. Check out [these timing results](http://pythonhosted.org//fastnumbers/timing.html) for just how much faster it can be.
 
 ### input_reader
 
@@ -62,3 +85,11 @@ cases, because you can use it to
  
 I'm sure there are many other wonderful uses, but these are why I am interested
 in the volume.
+
+## Other Projects
+
+### CMake Fortran Template
+
+[Code](https://github.com/SethMMorton/cmake_fortran_template)
+
+A template directory structure for a Fortran project using CMake as the build system.
